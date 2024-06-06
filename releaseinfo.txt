@@ -1,20 +1,25 @@
-commit 5c794a4e77ef9e0d1988a3d3a7d52c99d2da3e55 (HEAD -> master)
+commit f97066c243810a67a1b8ba410c6cd986e94d5371 (HEAD -> master, origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu May 23 16:08:02 2024 +0800
+Date:   Fri Jun 7 09:52:14 2024 +0800
 
-    LiveTV: fix Error caused by ATSC parameter [1/1]
+    LiveTv: Fix HBBTV channel switching display infobar [1/1]
 
-    PD#SWPL-170713
+    PD#SWPL-164939
 
     Problem:
-    After the ATSC program search is completed, although it prompts that the
-    program has been searched, the TV keeps showing No Channel
+    Enter HbbTV and play the VOD，press the back，the channel info will pop
+    up
 
     Solution:
-    fix Error caused by ATSC parameter
+    Fix HBBTV channel switching display infobar
 
     Verify:
-    T5W
+    T5D
 
-    Change-Id: I542f9d7e2fa1c75abd70e198836a273629a005fc
+    Change-Id: I151e51e9c481dc221e68227819dd0eb0d11c834b
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit ad531bd7b48fc3ad26d83b060c94cc9b98cf993f
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Jun 7 09:44:28 2024 +0800
+
