@@ -1,39 +1,40 @@
-commit 2b69b3b0045ee991523c34fcfdafc04176e76d57 (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Tue Jun 25 15:32:22 2024 +0800
+commit cff5f21f99a44488f7badee332425819da5d040b (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Jul 3 17:26:13 2024 +0800
 
-    LiveTv: change to isdb sometimes takes no effect [1/1]
+    LiveTV: Ignore channel switching before selecting the standby search area [1/1]
 
-    PD#SWPL-174481
+    PD#SWPL-163149
 
     Problem:
-    service bound late after getDtvSystem
+    After perform standby scan and wake up,pop up region dialog and "no play
+    path",the service list not correct
 
     Solution:
-    when getDtvSystem null, use dtvkit system
+    Ignore channel switching before selecting the standby search area
 
     Verify:
     T5D
 
-    Change-Id: Ice11829f0c8ac528e8f564c8b8501eed59568496
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: Ic1ee9b162ecc3bff0ec9f6751e129c65a686f651
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
-commit b4b9780ebcd69e2572905ac9470aac6c0e501921
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Thu Jun 20 11:18:31 2024 +0800
+commit 27f7df3125ac316065ce28017aa8830555514409
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Jul 3 18:49:51 2024 +0800
 
-    LiveTv: after stream info changed, it should not delay infobar show time [1/1]
+    LiveTV: Long press the INFO button as a hidden menu entry [1/1]
 
-    PD#SWPL-174367
+    PD#SWPL-173546
 
     Problem:
-    switch channel，info show 10s.
+    Long press the INFO button as a hidden menu entry
 
     Solution:
-    info stream changed is not recognized by user easily
+    Long press the INFO button as a hidden menu entry
 
     Verify:
-    T5D
+    loki
 
-    Change-Id: Iab254a5e1a7f7e35517a8231524c1141e31c0ac1
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: I23b514c2f1f907b56d9c4f8a89ddc6c9a1a0ebcf
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
