@@ -1,25 +1,39 @@
-commit f97066c243810a67a1b8ba410c6cd986e94d5371 (HEAD -> master, origin/master, origin/HEAD)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Jun 7 09:52:14 2024 +0800
+commit 2b69b3b0045ee991523c34fcfdafc04176e76d57 (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Tue Jun 25 15:32:22 2024 +0800
 
-    LiveTv: Fix HBBTV channel switching display infobar [1/1]
+    LiveTv: change to isdb sometimes takes no effect [1/1]
 
-    PD#SWPL-164939
+    PD#SWPL-174481
 
     Problem:
-    Enter HbbTV and play the VOD，press the back，the channel info will pop
-    up
+    service bound late after getDtvSystem
 
     Solution:
-    Fix HBBTV channel switching display infobar
+    when getDtvSystem null, use dtvkit system
 
     Verify:
     T5D
 
-    Change-Id: I151e51e9c481dc221e68227819dd0eb0d11c834b
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+    Change-Id: Ice11829f0c8ac528e8f564c8b8501eed59568496
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-commit ad531bd7b48fc3ad26d83b060c94cc9b98cf993f
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Jun 7 09:44:28 2024 +0800
+commit b4b9780ebcd69e2572905ac9470aac6c0e501921
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Thu Jun 20 11:18:31 2024 +0800
 
+    LiveTv: after stream info changed, it should not delay infobar show time [1/1]
+
+    PD#SWPL-174367
+
+    Problem:
+    switch channel，info show 10s.
+
+    Solution:
+    info stream changed is not recognized by user easily
+
+    Verify:
+    T5D
+
+    Change-Id: Iab254a5e1a7f7e35517a8231524c1141e31c0ac1
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
