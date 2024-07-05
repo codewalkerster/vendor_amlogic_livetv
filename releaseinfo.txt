@@ -1,40 +1,45 @@
+commit 7d583049b32c9ba56bbe32146b73d33b009771a8 (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Wed Jul 3 15:07:24 2024 +0800
+
+    LiveTv: isdb program block info show wrong [1/1]
+
+    PD#SWPL-175391
+
+    Problem:
+    info show wrong
+
+    Solution:
+    show info got program
+
+    Verify:
+    T5D
+
+    Change-Id: I88c30973ea5831eaf9c3e235921951bd87333bc1
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit af0df418e9ca84ea7613b2d2a1939bfe6531b6ab
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Fri Jul 5 14:29:18 2024 +0800
+
+    LiveTV: The video format on the infobar is incorrect [1/2]
+
+    PD#SWPL-173503
+
+    Problem:
+    The video format on the infobar is incorrect
+
+    Solution:
+    track update takes no effect, use new signal
+
+    Verify:
+    T5D
+
+    Change-Id: Ia54b487034fb0c32be02ef6f92f1feddad717347
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
 commit cff5f21f99a44488f7badee332425819da5d040b (origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
 Date:   Wed Jul 3 17:26:13 2024 +0800
 
     LiveTV: Ignore channel switching before selecting the standby search area [1/1]
-
-    PD#SWPL-163149
-
-    Problem:
-    After perform standby scan and wake up,pop up region dialog and "no play
-    path",the service list not correct
-
-    Solution:
-    Ignore channel switching before selecting the standby search area
-
-    Verify:
-    T5D
-
-    Change-Id: Ic1ee9b162ecc3bff0ec9f6751e129c65a686f651
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 27f7df3125ac316065ce28017aa8830555514409
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Jul 3 18:49:51 2024 +0800
-
-    LiveTV: Long press the INFO button as a hidden menu entry [1/1]
-
-    PD#SWPL-173546
-
-    Problem:
-    Long press the INFO button as a hidden menu entry
-
-    Solution:
-    Long press the INFO button as a hidden menu entry
-
-    Verify:
-    loki
-
-    Change-Id: I23b514c2f1f907b56d9c4f8a89ddc6c9a1a0ebcf
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
