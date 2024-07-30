@@ -1,54 +1,39 @@
-commit 242fab0deacad53c7ed7e7c6b70dd53d9bda9207 (HEAD -> master, origin/master, origin/HEAD)
-Merge: 0c108e37 af20aa98
-Author: Fei Zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Jul 19 02:22:07 2024 +0000
+commit 13e326b93b2229803f1253786bdd5559714f7404 (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Fri Aug 2 10:32:50 2024 +0800
 
-    Merge "LiveTV: after no channel, tune to create session [1/1]"
+    LiveTv: adjust density & resolution changed [1/1]
 
-commit 0c108e37568fb0662409381904cb95ad773e259d
-Author: ming.an <ming.an@amlogic.com>
-Date:   Wed May 29 16:09:27 2024 +0800
-
-    LiveTv: add prepare playback function [1/1]
-
-    PD#SWPL-167437
+    PD#SWPL-179454
 
     Problem:
-    add prepare playback function
+    long time if activity recreated
 
     Solution:
-    add prepare playback function
+    refresh view root instead
 
     Verify:
-    ohm
+    t5m
 
-    Change-Id: I4260159dc8fe45882c16e31b0915b09d9df2f905
-    Signed-off-by: ming.an <ming.an@amlogic.com>
+    Change-Id: Ideb6e5052a162dcd666e57db80c02025ea66b91f
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-commit 199cd5b92366f2b9a48f4288692fb6737a2178c0
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Jul 17 16:53:58 2024 +0800
+commit c4692f06d51ab4c0caf06ab3073250cfe8504bb4 (origin/master, origin/HEAD)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Mon Jul 22 14:36:17 2024 +0800
 
-    LiveTV: Channels block is not affected by the parental lock switch [1/1]
+    LiveTv: resource release timing issue [1/1]
 
-    PD#SWPL-177752
+    PD#SWPL-169687
 
     Problem:
-    Parent controls is set to off, channel blocked channels are not unlocked
+    exit livetv and enter in quickly again, tv black screen
 
     Solution:
-    Channels block is not affected by the parental lock switch
+    add protection for release
 
     Verify:
-    loki
+    t5m
 
-    Change-Id: If7c142cde3aa7ba97aadf351abbe7cbc2babcc0b
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 6dad30e4349489dab0834f5dffa1700c5a29017c
-Merge: 2620dcc0 e1c33f86
-Author: Fei Zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Jul 17 11:10:22 2024 +0000
-
-    Merge "LiveTV: Handle channel lock status abnormality [1/1]"
-
+    Change-Id: I7df01842de85684e66053239cda0a1ab1736c429
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
