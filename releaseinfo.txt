@@ -1,39 +1,20 @@
-commit 13e326b93b2229803f1253786bdd5559714f7404 (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Fri Aug 2 10:32:50 2024 +0800
+commit 929d79e657cbc20dcbef04754f23a0438c4fb9f8 (HEAD -> master)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu Aug 15 09:50:54 2024 +0800
 
-    LiveTv: adjust density & resolution changed [1/1]
+    LiveTV: Fixed channel switching error [1/1]
 
-    PD#SWPL-179454
-
-    Problem:
-    long time if activity recreated
-
-    Solution:
-    refresh view root instead
-
-    Verify:
-    t5m
-
-    Change-Id: Ideb6e5052a162dcd666e57db80c02025ea66b91f
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit c4692f06d51ab4c0caf06ab3073250cfe8504bb4 (origin/master, origin/HEAD)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Mon Jul 22 14:36:17 2024 +0800
-
-    LiveTv: resource release timing issue [1/1]
-
-    PD#SWPL-169687
+    PD#SWPL-179719
 
     Problem:
-    exit livetv and enter in quickly again, tv black screen
+    Schedule recording of channels with different frequencies, play YouTube
+    videos, and schedule recording abnormalities
 
     Solution:
-    add protection for release
+    Fixed channel switching error
 
     Verify:
-    t5m
+    S7
 
-    Change-Id: I7df01842de85684e66053239cda0a1ab1736c429
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: I99ea644405395b37c9a17f240b9f1a241c30a0b2
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
