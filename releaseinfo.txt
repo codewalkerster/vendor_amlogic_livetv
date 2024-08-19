@@ -1,20 +1,20 @@
-commit 929d79e657cbc20dcbef04754f23a0438c4fb9f8 (HEAD -> master)
+commit a441e3a71dd3ccbd3e0f1f300d2bed0d7e45c8cf (HEAD -> master)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Aug 15 09:50:54 2024 +0800
+Date:   Mon Aug 19 15:47:19 2024 +0800
 
-    LiveTV: Fixed channel switching error [1/1]
+    LiveTV: Handle CIplus number channel switching [1/1]
 
-    PD#SWPL-179719
+    PD#SWPL-182065
 
     Problem:
-    Schedule recording of channels with different frequencies, play YouTube
-    videos, and schedule recording abnormalities
+    Fail for 'cannot zap to the service 13 by RCU digital keys
 
     Solution:
-    Fixed channel switching error
+    Type1 programs can only switch between V1 type CI plus channels; type2
+    can switch between broadcast and v2
 
     Verify:
-    S7
+    T5M
 
-    Change-Id: I99ea644405395b37c9a17f240b9f1a241c30a0b2
+    Change-Id: Ib47bcb9fb3c349392871557411fb2a7e721cad96
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
