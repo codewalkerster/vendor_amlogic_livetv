@@ -1,28 +1,41 @@
-commit aaf45bd82e4ea0047b9c8389d7d93a4c646ffdcc (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Sep 4 09:17:17 2024 +0800
+commit d3b76716838081f70845242e31ba34a1ac91b4f5 (HEAD -> master)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Mon Sep 9 10:00:32 2024 +0800
 
-    livetv: configuration changes caused screen blink [1/1]
+    LiveTv: Remove OSD blackout when channel is locked [1/1]
 
-    PD#SWPL-183913
+    PD#SWPL-183613
+    PD#SWPL-183104
 
     Problem:
-    configuration changed causes dlg status recovery, then causes
-    configuration changed again.
+    After the channel is cleared, there is no prompt "no channel"
+    The blue screen function does not work
 
     Solution:
-    don't re-tune channel
+    Remove OSD blackout when channel is locked
 
     Verify:
-    t3x
+    T5M
 
-    Change-Id: I45a9599e823fc0f78f68fabe8d58eda9a6deff22
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: Ib96342ee3010439402f5d8b9997a9e7d84ea20ab
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
-commit 22742875a9dafb6eef98ff494372883ff8f590b9 (origin/master, origin/HEAD)
-Author: Ming An <Ming.An@amlogic.com>
-Date:   Tue Aug 27 14:26:03 2024 +0800
+commit c5dcbebba3edca6d715673c1a72c2f92c8fbf0b4 (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Sep 4 19:47:45 2024 +0800
 
-    livetv: playback deleted program cause TIS crash [1/1]
+    LiveTV: DVB UI can be called out in ATSC source [1/1]
 
-    PD#SWPL-183206
+    PD#SWPL-182568
+
+    Problem:
+    DVB UI can be called out in ATSC source
+
+    Solution:
+    DVB UI can be called out in ATSC source
+
+    Verify:
+    T5W
+
+    Change-Id: I9673e32776fa94cd99aa743f75c141c91c2486de
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
