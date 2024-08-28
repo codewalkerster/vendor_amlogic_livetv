@@ -1,20 +1,20 @@
-commit a441e3a71dd3ccbd3e0f1f300d2bed0d7e45c8cf (HEAD -> master)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Mon Aug 19 15:47:19 2024 +0800
+commit 22742875a9dafb6eef98ff494372883ff8f590b9 (HEAD -> master)
+Author: Ming An <Ming.An@amlogic.com>
+Date:   Tue Aug 27 14:26:03 2024 +0800
 
-    LiveTV: Handle CIplus number channel switching [1/1]
+    livetv: playback deleted program cause TIS crash [1/1]
 
-    PD#SWPL-182065
+    PD#SWPL-183206
 
     Problem:
-    Fail for 'cannot zap to the service 13 by RCU digital keys
+    Playback of the file being deleted causes an exception
 
     Solution:
-    Type1 programs can only switch between V1 type CI plus channels; type2
-    can switch between broadcast and v2
+    can't play deleted file
 
     Verify:
-    T5M
+    t5m
 
-    Change-Id: Ib47bcb9fb3c349392871557411fb2a7e721cad96
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+    Change-Id: Ic133d9c5369d60f915c387db3511f0697494b1f9
+    Signed-off-by: Ming An <Ming.An@amlogic.com>
+
