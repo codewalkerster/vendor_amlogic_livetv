@@ -1,20 +1,28 @@
-commit 22742875a9dafb6eef98ff494372883ff8f590b9 (HEAD -> master)
+commit aaf45bd82e4ea0047b9c8389d7d93a4c646ffdcc (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Wed Sep 4 09:17:17 2024 +0800
+
+    livetv: configuration changes caused screen blink [1/1]
+
+    PD#SWPL-183913
+
+    Problem:
+    configuration changed causes dlg status recovery, then causes
+    configuration changed again.
+
+    Solution:
+    don't re-tune channel
+
+    Verify:
+    t3x
+
+    Change-Id: I45a9599e823fc0f78f68fabe8d58eda9a6deff22
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 22742875a9dafb6eef98ff494372883ff8f590b9 (origin/master, origin/HEAD)
 Author: Ming An <Ming.An@amlogic.com>
 Date:   Tue Aug 27 14:26:03 2024 +0800
 
     livetv: playback deleted program cause TIS crash [1/1]
 
     PD#SWPL-183206
-
-    Problem:
-    Playback of the file being deleted causes an exception
-
-    Solution:
-    can't play deleted file
-
-    Verify:
-    t5m
-
-    Change-Id: Ic133d9c5369d60f915c387db3511f0697494b1f9
-    Signed-off-by: Ming An <Ming.An@amlogic.com>
-
