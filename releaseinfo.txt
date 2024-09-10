@@ -1,41 +1,28 @@
-commit d3b76716838081f70845242e31ba34a1ac91b4f5 (HEAD -> master)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Mon Sep 9 10:00:32 2024 +0800
+commit 1687474b83f1581fb9b95d4ebb28663aab251a6b (HEAD -> master, origin/master, origin/HEAD)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Thu Sep 5 10:42:45 2024 +0800
 
-    LiveTv: Remove OSD blackout when channel is locked [1/1]
+    LiveTV: dvb teletext add a fake "Off" ttx trackinfo [2/2]
 
-    PD#SWPL-183613
-    PD#SWPL-183104
-
-    Problem:
-    After the channel is cleared, there is no prompt "no channel"
-    The blue screen function does not work
-
-    Solution:
-    Remove OSD blackout when channel is locked
-
-    Verify:
-    T5M
-
-    Change-Id: Ib96342ee3010439402f5d8b9997a9e7d84ea20ab
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit c5dcbebba3edca6d715673c1a72c2f92c8fbf0b4 (origin/master, origin/HEAD)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Sep 4 19:47:45 2024 +0800
-
-    LiveTV: DVB UI can be called out in ATSC source [1/1]
-
-    PD#SWPL-182568
+    PD#SWPL-46212
 
     Problem:
-    DVB UI can be called out in ATSC source
+    tis can't diff close subtitle from close ttx when select track null
 
     Solution:
-    DVB UI can be called out in ATSC source
+    a fake "Off" ttx trackinfo
 
     Verify:
     T5W
 
-    Change-Id: I9673e32776fa94cd99aa743f75c141c91c2486de
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+    Change-Id: I67b507bddce86685045192b4bcb0d10242ed8789
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 369df09cf9b9551582c8cbce5275fecfd59ed77f
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Tue Sep 10 17:39:34 2024 +0800
+
+    LiveTv: use prop to get time shift duration [1/2]
+
+    PD#SWPL-184639
+
