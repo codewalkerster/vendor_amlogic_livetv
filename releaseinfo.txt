@@ -1,39 +1,20 @@
-commit 073419b08f3e73c6b68d1c71fb4f5470a22df8c1 (origin/master, origin/HEAD)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Sep 27 11:16:54 2024 +0800
+commit 34a9785d7a5ae39dba2b02d826e131ff9d1d4010 (HEAD -> master)
+Author: Ming An <Ming.An@amlogic.com>
+Date:   Thu Sep 19 17:22:04 2024 +0800
 
-    LiveTV: Processing wakelock lock released during recording [1/1]
+    pvr: multiple record task abnormal [1/1]
 
-    PD#SWPL-185316
-
-    Problem:
-    The data recorded after the standby state is reproduced as 0
-
-    Solution:
-    Handle the wakelock lock released during recording and causing standby
-
-    Verify:
-    T5M
-
-    Change-Id: Ic7d08ae6bfb42172d4564a7b8bdd035745500b05
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 78ca263565e6cdacde98d85c324749a06e9c6a52
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Sep 27 11:14:09 2024 +0800
-
-    LiveTV: HDMI RX is not Full screen [1/1]
-
-    PD#SWPL-183676
+    PD#SWPL-184865
 
     Problem:
-    HDMI RX is not Full screen
+    new record task not get currently dvr tuner resource.
 
     Solution:
-    fix HDMI RX is not Full screen
+    allocate dvr resources correctly
 
     Verify:
-    T982
+    t5m
 
-    Change-Id: I93427df67c2eff52b075a4d80f73c87005a72e20
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+    Change-Id: I2a034f343aed737d4aa4ade1a4bcb41779537597
+    Signed-off-by: Ming An <Ming.An@amlogic.com>
+
