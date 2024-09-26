@@ -1,28 +1,39 @@
-commit 1687474b83f1581fb9b95d4ebb28663aab251a6b (HEAD -> master, origin/master, origin/HEAD)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Thu Sep 5 10:42:45 2024 +0800
+commit 073419b08f3e73c6b68d1c71fb4f5470a22df8c1 (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Sep 27 11:16:54 2024 +0800
 
-    LiveTV: dvb teletext add a fake "Off" ttx trackinfo [2/2]
+    LiveTV: Processing wakelock lock released during recording [1/1]
 
-    PD#SWPL-46212
+    PD#SWPL-185316
 
     Problem:
-    tis can't diff close subtitle from close ttx when select track null
+    The data recorded after the standby state is reproduced as 0
 
     Solution:
-    a fake "Off" ttx trackinfo
+    Handle the wakelock lock released during recording and causing standby
 
     Verify:
-    T5W
+    T5M
 
-    Change-Id: I67b507bddce86685045192b4bcb0d10242ed8789
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: Ic7d08ae6bfb42172d4564a7b8bdd035745500b05
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
-commit 369df09cf9b9551582c8cbce5275fecfd59ed77f
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Tue Sep 10 17:39:34 2024 +0800
+commit 78ca263565e6cdacde98d85c324749a06e9c6a52
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Sep 27 11:14:09 2024 +0800
 
-    LiveTv: use prop to get time shift duration [1/2]
+    LiveTV: HDMI RX is not Full screen [1/1]
 
-    PD#SWPL-184639
+    PD#SWPL-183676
 
+    Problem:
+    HDMI RX is not Full screen
+
+    Solution:
+    fix HDMI RX is not Full screen
+
+    Verify:
+    T982
+
+    Change-Id: I93427df67c2eff52b075a4d80f73c87005a72e20
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
