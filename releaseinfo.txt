@@ -1,20 +1,36 @@
-commit 34a9785d7a5ae39dba2b02d826e131ff9d1d4010 (HEAD -> master)
-Author: Ming An <Ming.An@amlogic.com>
-Date:   Thu Sep 19 17:22:04 2024 +0800
+commit 79fd083fbdec9e1281fc90765cbac105845ed3af (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Wed Oct 9 10:40:20 2024 +0800
 
-    pvr: multiple record task abnormal [1/1]
+    LiveTV: adjust atv audio track logic for MTS [1/1]
 
-    PD#SWPL-184865
+    PD#SWPL-185359
 
     Problem:
-    new record task not get currently dvr tuner resource.
+    logic contentious
 
     Solution:
-    allocate dvr resources correctly
+    sap >> stereo >> mono
 
     Verify:
-    t5m
+    T5M
 
-    Change-Id: I2a034f343aed737d4aa4ade1a4bcb41779537597
-    Signed-off-by: Ming An <Ming.An@amlogic.com>
+    Change-Id: Iaccceaa2c32a625cdbfb03a5ce22ac5121d8523f
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
+commit 32ace72a93845c9835a7138c18bb4dd8d5e82747
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Thu Oct 10 09:57:46 2024 +0800
+
+    LiveTV: support channel delete and insert again for scheduleRecording [1/2]
+
+    PD#SWPL-163165
+
+    Problem:
+    DTG test case
+
+    Solution:
+    support channel delete and insert again for scheduleRecording
+
+    Verify:
+    T5M
