@@ -1,40 +1,20 @@
-commit cad689e50669f6cc60b0c63572808d313955d9df (HEAD -> master)
-Author: Ming An <Ming.An@amlogic.com>
-Date:   Tue Oct 15 15:49:57 2024 +0800
+commit 40d1f7ca19a43e2db9ac13e7ba46a6b6821f953c (HEAD -> master)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu Oct 24 13:38:47 2024 +0800
 
-    pvr: Play PVR file and unplug the HDD error [1/1]
+    LiveTV: Update the UI based on the Audio track update [1/1]
 
-    PD#SWPL-189098
-
-    Problem:
-    Play PVR file and unplug the HDD, tunerhal crash
-
-    Solution:
-    check disk eject and stop playback
-
-    Verify:
-    t5m
-
-    Signed-off-by: Ming An <Ming.An@amlogic.com>
-    Change-Id: I489c7a4276ad6c71cd3d989da4b61725e76fd0c4
-
-commit 79fd083fbdec9e1281fc90765cbac105845ed3af (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Oct 9 10:40:20 2024 +0800
-
-    LiveTV: adjust atv audio track logic for MTS [1/1]
-
-    PD#SWPL-185359
+    PD#SWPL-188104
 
     Problem:
-    logic contentious
+    Repeat select ResetDefaultAudioStream，sometimes the focus will audio
+    disappear
 
     Solution:
-    sap >> stereo >> mono
+    Update the UI based on the Audio track update
 
     Verify:
     T5M
 
-    Change-Id: Iaccceaa2c32a625cdbfb03a5ce22ac5121d8523f
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
+    Change-Id: Ibfdf1cea3a07a04af53a72a1837d2a4a8cf335be
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
