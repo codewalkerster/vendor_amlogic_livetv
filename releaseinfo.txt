@@ -1,21 +1,35 @@
+<<<<<<< HEAD
 commit f8d8cf57fb32612fa964b289b76404026ffc25ec (origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
 Date:   Tue Oct 29 19:23:57 2024 +0800
 
     LiveTV: Ignore invalid Audio track updates [1/1]
+=======
+commit 2525ed88692aa63e1ce06b6979d6b4463545557a (HEAD)
+Author: an.xi <an.xi@amlogic.com>
+Date:   Thu Oct 24 19:20:06 2024 +0800
 
-    PD#SWPL-188104
+    livetv: optimize the start up performance [1/1]
+>>>>>>> 5d18860 (livetv: optimize the start up performance [1/1])
+
+    PD#SWPL-188501
 
     Problem:
-    Repeat select ResetDefaultAudioStream，sometimes the focus will audio
-    disappear
+    The start up time could take more than 4 seconds.
 
     Solution:
+<<<<<<< HEAD
     Ignore invalid Audio track updates
+=======
+    1. Late initialize heavy groups and move some jobs
+    outside of main thread.
+    2. Enable minifyEnabled property to build the apk.
+>>>>>>> 5d18860 (livetv: optimize the start up performance [1/1])
 
     Verify:
-    T5M
+    local
 
+<<<<<<< HEAD
     Change-Id: I3d265fb8ca533eb0602b4b8357d05cb1face82fc
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
@@ -38,3 +52,7 @@ Date:   Tue Oct 29 19:21:24 2024 +0800
 
     Change-Id: I21d398db3ad40a07dd378ddee7de961ea62421b6
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+=======
+    Change-Id: I33b46b3adbae8249660939826b4066e9a9c3e0c8
+    Signed-off-by: an.xi <an.xi@amlogic.com>
+>>>>>>> 5d18860 (livetv: optimize the start up performance [1/1])
