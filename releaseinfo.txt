@@ -1,8 +1,8 @@
-commit 40d1f7ca19a43e2db9ac13e7ba46a6b6821f953c (HEAD -> master)
+commit f8d8cf57fb32612fa964b289b76404026ffc25ec (origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Oct 24 13:38:47 2024 +0800
+Date:   Tue Oct 29 19:23:57 2024 +0800
 
-    LiveTV: Update the UI based on the Audio track update [1/1]
+    LiveTV: Ignore invalid Audio track updates [1/1]
 
     PD#SWPL-188104
 
@@ -11,10 +11,30 @@ Date:   Thu Oct 24 13:38:47 2024 +0800
     disappear
 
     Solution:
-    Update the UI based on the Audio track update
+    Ignore invalid Audio track updates
 
     Verify:
     T5M
 
-    Change-Id: Ibfdf1cea3a07a04af53a72a1837d2a4a8cf335be
+    Change-Id: I3d265fb8ca533eb0602b4b8357d05cb1face82fc
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit 034a05db38a41a3ea3c2e4cf9c5daa463457b544
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Tue Oct 29 19:21:24 2024 +0800
+
+    LiveTv: No need to set SearchType [1/1]
+
+    PD#SWPL-190582
+
+    Problem:
+    No need to set SearchType
+
+    Solution:
+    No need to set SearchType
+
+    Verify:
+    T5M
+
+    Change-Id: I21d398db3ad40a07dd378ddee7de961ea62421b6
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
