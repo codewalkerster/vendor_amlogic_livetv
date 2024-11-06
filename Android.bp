@@ -53,3 +53,22 @@ android_app_import {
     apk: "DroidLogicLiveTv.apk",
 
 }
+
+android_app_import {
+    name: "DroidLogicLiveTvPanelTv",
+
+    overrides: [
+        "DroidLogicLiveTv",
+    ],
+
+    dex_preopt: {
+        enabled:false,
+    },
+
+    defaults: ["prebuilt_livetv_go_defaults"],
+    certificate: "platform",
+
+    product_specific: true,
+    apk: "DroidLogicLiveTvPanelTv.apk",
+
+}
