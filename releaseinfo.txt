@@ -1,58 +1,39 @@
-<<<<<<< HEAD
-commit f8d8cf57fb32612fa964b289b76404026ffc25ec (origin/master, origin/HEAD)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Oct 29 19:23:57 2024 +0800
+commit ce3eb64f77ff5120dd9a24d7625fb9806fdfc4dd
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Mon Oct 28 18:46:22 2024 +0800
 
-    LiveTV: Ignore invalid Audio track updates [1/1]
-=======
-commit 2525ed88692aa63e1ce06b6979d6b4463545557a (HEAD)
-Author: an.xi <an.xi@amlogic.com>
-Date:   Thu Oct 24 19:20:06 2024 +0800
-
-    livetv: optimize the start up performance [1/1]
->>>>>>> 5d18860 (livetv: optimize the start up performance [1/1])
-
-    PD#SWPL-188501
-
+    LiveTV: add dtvkit atsc number search [2/2]
+    
+    PD#SWPL-189742
+    
     Problem:
-    The start up time could take more than 4 seconds.
-
+    new function
+    
     Solution:
-<<<<<<< HEAD
-    Ignore invalid Audio track updates
-=======
-    1. Late initialize heavy groups and move some jobs
-    outside of main thread.
-    2. Enable minifyEnabled property to build the apk.
->>>>>>> 5d18860 (livetv: optimize the start up performance [1/1])
-
-    Verify:
-    local
-
-<<<<<<< HEAD
-    Change-Id: I3d265fb8ca533eb0602b4b8357d05cb1face82fc
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 034a05db38a41a3ea3c2e4cf9c5daa463457b544
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Oct 29 19:21:24 2024 +0800
-
-    LiveTv: No need to set SearchType [1/1]
-
-    PD#SWPL-190582
-
-    Problem:
-    No need to set SearchType
-
-    Solution:
-    No need to set SearchType
-
+    new function
+    
     Verify:
     T5M
+    
+    Change-Id: I66f23e54fcd28be8aa30b97c94ae2a7649af9928
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-    Change-Id: I21d398db3ad40a07dd378ddee7de961ea62421b6
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-=======
-    Change-Id: I33b46b3adbae8249660939826b4066e9a9c3e0c8
-    Signed-off-by: an.xi <an.xi@amlogic.com>
->>>>>>> 5d18860 (livetv: optimize the start up performance [1/1])
+commit 4291e9e2b05acf10e8a8c5d9e77757de88d9b607
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Fri Oct 25 15:26:41 2024 +0800
+
+    LiveTV: swap behavior is incorrect [1/1]
+    
+    PD#SWPL-190113
+    
+    Problem:
+    swap func is wrong
+    
+    Solution:
+    use all channel list to set channel index and fix set_displaynumber
+    
+    Verify:
+    T5M
+    
+    Change-Id: I2eb1bfb2657eb0613dcbdbcddaf2dbdba673e5c5
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
