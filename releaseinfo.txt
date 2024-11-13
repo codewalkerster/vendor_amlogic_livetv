@@ -1,39 +1,29 @@
-commit ce3eb64f77ff5120dd9a24d7625fb9806fdfc4dd
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Mon Oct 28 18:46:22 2024 +0800
+commit 9fe612cc6ff84c980d2ca94e99c0b554be9d6252 (HEAD -> master)
+Merge: bec5a860 dfedb0ba
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Nov 20 11:13:09 2024 +0800
 
-    LiveTV: add dtvkit atsc number search [2/2]
-    
-    PD#SWPL-189742
-    
+    Merge branch 'master' of ssh://source.amlogic.com:29418/SEI-DVB/LiveTv
+
+    Change-Id: I5c31d7b426409bb9c66a35ffe124e1731573e362
+
+commit dfedb0ba3a86cfbaacb1e38d878842492a65da64 (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Nov 15 09:12:25 2024 +0800
+
+    LiveTV: Channel lock can be set during TimeShift [1/1]
+
+    PD#SWPL-188354
+
     Problem:
-    new function
-    
-    Solution:
-    new function
-    
-    Verify:
-    T5M
-    
-    Change-Id: I66f23e54fcd28be8aa30b97c94ae2a7649af9928
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Channel lock can be set during TimeShift.
 
-commit 4291e9e2b05acf10e8a8c5d9e77757de88d9b607
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Fri Oct 25 15:26:41 2024 +0800
-
-    LiveTV: swap behavior is incorrect [1/1]
-    
-    PD#SWPL-190113
-    
-    Problem:
-    swap func is wrong
-    
     Solution:
-    use all channel list to set channel index and fix set_displaynumber
-    
+    Channel lock can be set during TimeShift.
+
     Verify:
-    T5M
-    
-    Change-Id: I2eb1bfb2657eb0613dcbdbcddaf2dbdba673e5c5
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    T5D
+
+    Change-Id: Ie7091286eb00bcabaa67c938f1aa3fffc9992613
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
