@@ -1,29 +1,42 @@
-commit 9fe612cc6ff84c980d2ca94e99c0b554be9d6252 (HEAD -> master)
-Merge: bec5a860 dfedb0ba
+commit b84aee45344e05c7fa7f7daf13627b9c5a56485e
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Nov 20 11:13:09 2024 +0800
+Date:   Thu Nov 28 09:35:56 2024 +0800
 
-    Merge branch 'master' of ssh://source.amlogic.com:29418/SEI-DVB/LiveTv
+    LiveTV: After the parental lock is on, ignore the Media Start Key [1/1]
 
-    Change-Id: I5c31d7b426409bb9c66a35ffe124e1731573e362
-
-commit dfedb0ba3a86cfbaacb1e38d878842492a65da64 (origin/master, origin/HEAD)
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Nov 15 09:12:25 2024 +0800
-
-    LiveTV: Channel lock can be set during TimeShift [1/1]
-
-    PD#SWPL-188354
+    PD#SWPL-185557
 
     Problem:
-    Channel lock can be set during TimeShift.
+    A splash screen appears when executing
+    TimeShift when setting parental lock
 
     Solution:
-    Channel lock can be set during TimeShift.
+    After the parental lock is on, ignore the Media Start Key
 
     Verify:
-    T5D
+    T5M
 
-    Change-Id: Ie7091286eb00bcabaa67c938f1aa3fffc9992613
+    Change-Id: Ibfd942a6255da594c8bd8820d57e9a2e8bae88c5
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
+commit 2a0e029ff92868d9d671d9dc0df928dd108ca8a7
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu Nov 28 09:40:02 2024 +0800
+
+    LiveTV: Added PIP blue and black screen processing [1/1]
+
+    PD#SWPL-192351
+
+    Problem:
+    Add audio only service to PIP window，
+    the audio only service background
+    not display black screen
+
+    Solution:
+    Added PIP blue and black screen processing
+
+    Verify:
+    ohm
+
+    Change-Id: I2101e64687918c10816c9b610bf61cda235c4d87
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
