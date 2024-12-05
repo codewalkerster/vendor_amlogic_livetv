@@ -1,42 +1,26 @@
-commit b84aee45344e05c7fa7f7daf13627b9c5a56485e
+commit fab114bba768a0071719b5a8551bd6cb9ca05e64
+Merge: 4b099df0 54738119
+Author: Fei Zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu Dec 12 01:38:07 2024 +0000
+
+    Merge "LiveTV: set italy new behavior [1/1]"
+
+commit 4b099df04ddbd04f1f34ac242662469b8994403f
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Nov 28 09:35:56 2024 +0800
+Date:   Tue Dec 10 17:02:58 2024 +0800
 
-    LiveTV: After the parental lock is on, ignore the Media Start Key [1/1]
-
-    PD#SWPL-185557
-
+    LiveTV: can select time zone [1/1]
+    
+    PD#SWPL-194868
+    
     Problem:
-    A splash screen appears when executing
-    TimeShift when setting parental lock
-
+    when ATSC daylight saving time mode is auto,can select time zone
+    
     Solution:
-    After the parental lock is on, ignore the Media Start Key
-
+    can select time zone
+    
     Verify:
     T5M
-
-    Change-Id: Ibfd942a6255da594c8bd8820d57e9a2e8bae88c5
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 2a0e029ff92868d9d671d9dc0df928dd108ca8a7
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Nov 28 09:40:02 2024 +0800
-
-    LiveTV: Added PIP blue and black screen processing [1/1]
-
-    PD#SWPL-192351
-
-    Problem:
-    Add audio only service to PIP window，
-    the audio only service background
-    not display black screen
-
-    Solution:
-    Added PIP blue and black screen processing
-
-    Verify:
-    ohm
-
-    Change-Id: I2101e64687918c10816c9b610bf61cda235c4d87
+    
+    Change-Id: Id418a59b8df13a0de5b2166278bfb8da9c92ca2f
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
