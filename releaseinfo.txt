@@ -1,26 +1,47 @@
-commit fab114bba768a0071719b5a8551bd6cb9ca05e64
-Merge: 4b099df0 54738119
+commit 91063f42cdd4860d2de62f966b40751481541733
+Merge: 35061dca d3980997
 Author: Fei Zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Dec 12 01:38:07 2024 +0000
+Date:   Tue Dec 17 02:10:23 2024 +0000
 
-    Merge "LiveTV: set italy new behavior [1/1]"
+    Merge "LiveTV: update epg list [1/1]"
 
-commit 4b099df04ddbd04f1f34ac242662469b8994403f
+commit 35061dcace00e2968dde3f4ba1933feeabbc8adc
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Dec 10 17:02:58 2024 +0800
+Date:   Thu Dec 12 13:49:11 2024 +0800
 
-    LiveTV: can select time zone [1/1]
-    
-    PD#SWPL-194868
-    
+    LiveTV: update expired events and stream reflow events [1/1]
+
+    PD#SWPL-195369
+
     Problem:
-    when ATSC daylight saving time mode is auto,can select time zone
-    
+    Channel lock recognition error
+
     Solution:
-    can select time zone
-    
+    update expired events and stream reflow events
+
     Verify:
     T5M
-    
-    Change-Id: Id418a59b8df13a0de5b2166278bfb8da9c92ca2f
+
+    Change-Id: I74203aa7bb655468af736a3cf7b6cf10610ffea5
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit d3980997822235324e3779b35098d707b5f49d2f
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Mon Dec 16 09:09:53 2024 +0800
+
+    LiveTV: update epg list [1/1]
+
+    PD#SWPL-194930
+
+    Problem:
+    The EPG list is not updated when the event expires or the stream
+    is re-streamed
+
+    Solution:
+    update EPG list
+
+    Verify:
+    T5M
+
+    Change-Id: Iea7668191ca08376d107c0ba0f6690caa9778b74
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
