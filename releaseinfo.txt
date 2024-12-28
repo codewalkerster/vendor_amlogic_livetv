@@ -40,3 +40,23 @@ Date:   Fri Jun 21 14:15:41 2024 +0800
 
     Change-Id: Ib74a79ce631a63fa99a111ffd4735acd0887f143
     Signed-off-by: shicai.du <shicai.du@amlogic.com>
+
+commit 4e71fcc65cfc4caf9a9559e2508e11c9a8346789 (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu Dec 26 16:48:32 2024 +0800
+
+    LiveTV: Handling displayNumber as null causes crash [1/1]
+
+    PD#SWPL-198044
+
+    Problem:
+    Handling displayNumber as null causes crash
+
+    Solution:
+    Handling displayNumber as null causes crash
+
+    Verify:
+    Ross
+
+    Change-Id: I6087d8c4a8cc9f22c1d15cb9f99699e079b376a4
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
