@@ -1,43 +1,67 @@
-commit 2c8e1491b5c5de3a330dedf022885cb116e66117
+commit 4cfe5421a00a4ca4e31c864d23e67823f02835b8 (HEAD -> master)
 Author: ming.an <ming.an@amlogic.com>
 Date:   Wed May 29 16:23:55 2024 +0800
 
     LiveTv: add tiaf function [1/1]
-    
+
     PD#SWPL-131395
-    
+
     Problem:
     add tiaf function
-    
+
     Solution:
     add tiaf function
-    
+
     Verify:
     ohm
-    
+
     Change-Id: Ibd2846f69d352c153c293625e448c291606b2eb8
     Signed-off-by: ming.an <ming.an@amlogic.com>
     Signed-off-by: Ming An <Ming.An@amlogic.com>
 
-commit 4580589e1d5e6e9cc13031740367aa9dc47c4105
+commit b74bceb075aae3aec7a0622aef57c31680f95462
 Author: shicai.du <shicai.du@amlogic.com>
 Date:   Fri Jun 21 14:15:41 2024 +0800
 
     LiveTV: Ginga Setting UI development [1/1]
-    
+
     PD#TV-124370
     PD#TV-124367
     PD#TV-124373
-    
+
     Problem:
     ginga user feature development
-    
+
     Solution:
     Add Ginga items to the menu
-    
+
     Verify:
     T5W
-    
+
     Change-Id: Ib74a79ce631a63fa99a111ffd4735acd0887f143
     Signed-off-by: shicai.du <shicai.du@amlogic.com>
     Signed-off-by: Ming An <Ming.An@amlogic.com>
+
+commit 46df6f91f3093a6aed5099fcf2133b17f046193b (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Jan 15 18:57:24 2025 +0800
+
+    LiveTV: Control subtitle status with setCaptionEnabled API [1/1]
+
+    PD#SWPL-199399
+    PD#SWPL-192407
+
+    Problem:
+    1.Control subtitle status with setCaptionEnabled API
+    2.When enter the PIP Split screen，exit the DTV the
+    right window disappear slower
+
+    Solution:
+    1.Control subtitle status with setCaptionEnabled API
+    2.Hide TvView when stopTV
+
+    Verify:
+    T5W
+
+    Change-Id: Ic81a88b4e1919fb614ae1f39e605feb8d9f85c40
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
