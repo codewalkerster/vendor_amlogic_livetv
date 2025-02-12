@@ -1,6 +1,7 @@
-commit 278ff538d324533409bea46fbe5dd18d49227af8 (HEAD -> master)
+commit ee3e25af1e149c2115699e7e82e661173c168584 (HEAD -> master)
 Author: Ming An <Ming.An@amlogic.com>
 Date:   Wed Jan 8 11:30:54 2025 +0800
+
     ginga: LiveTv support Ginga [1/1]
 
     PD#SWPL-198928
@@ -17,22 +18,23 @@ Date:   Wed Jan 8 11:30:54 2025 +0800
     Change-Id: I8dcd98bc9a063ec00cb847f4cb2bc8bc189ee396
     Signed-off-by: Ming An <Ming.An@amlogic.com>
 
-commit 41560a65518b129dada1f433bde57244cc6c6d42
+
+commit 523002c05d85a8e6be9630d8343390b773c4e700 (origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Jan 22 10:07:38 2025 +0800
+Date:   Fri Feb 21 14:16:35 2025 +0800
 
-    LiveTV: Add time zone selection [1/1]
+    LiveTV: In ISDB mode, enter TV and set EWBS area code [1/1]
 
-    PD#SWPL-198715
+    PD#SWPL-202898
 
     Problem:
-    Satellite Channel Tuning and Time Display Verification
+    DC off/on, EWBS not displayed
 
     Solution:
-    Add time zone selection
+    In ISDB mode, enter TV and set EWBS area code
 
     Verify:
-    calla
+    T5M
 
-    Change-Id: I5323d7c0bd37cfa8c66ca3cb3b91045fca7a7f8f
+    Change-Id: Ic18979b349c101b0293324f0531b16a2b7776cdc
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
