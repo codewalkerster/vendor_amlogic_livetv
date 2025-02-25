@@ -1,40 +1,39 @@
-commit ee3e25af1e149c2115699e7e82e661173c168584 (HEAD -> master)
+commit 58a0435ff7485c275750908532a82583c0ee24c6
 Author: Ming An <Ming.An@amlogic.com>
 Date:   Wed Jan 8 11:30:54 2025 +0800
 
     ginga: LiveTv support Ginga [1/1]
-
+    
     PD#SWPL-198928
-
+    
     Problem:
     LiveTv support Ginga
-
+    
     Solution:
     LiveTv support Ginga
-
+    
     Verify:
     t5m
-
+    
     Change-Id: I8dcd98bc9a063ec00cb847f4cb2bc8bc189ee396
     Signed-off-by: Ming An <Ming.An@amlogic.com>
 
-
-commit 523002c05d85a8e6be9630d8343390b773c4e700 (origin/master, origin/HEAD)
+commit 523002c05d85a8e6be9630d8343390b773c4e700
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
 Date:   Fri Feb 21 14:16:35 2025 +0800
 
     LiveTV: In ISDB mode, enter TV and set EWBS area code [1/1]
-
+    
     PD#SWPL-202898
-
+    
     Problem:
     DC off/on, EWBS not displayed
-
+    
     Solution:
     In ISDB mode, enter TV and set EWBS area code
-
+    
     Verify:
     T5M
-
+    
     Change-Id: Ic18979b349c101b0293324f0531b16a2b7776cdc
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
