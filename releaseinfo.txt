@@ -1,39 +1,60 @@
-commit 58a0435ff7485c275750908532a82583c0ee24c6
+commit 6756a69d75f51a45196bbfe1e58b8f92ac374cbc (HEAD -> master)
 Author: Ming An <Ming.An@amlogic.com>
 Date:   Wed Jan 8 11:30:54 2025 +0800
 
     ginga: LiveTv support Ginga [1/1]
-    
+
     PD#SWPL-198928
-    
+
     Problem:
     LiveTv support Ginga
-    
+
     Solution:
     LiveTv support Ginga
-    
+
     Verify:
     t5m
-    
+
     Change-Id: I8dcd98bc9a063ec00cb847f4cb2bc8bc189ee396
     Signed-off-by: Ming An <Ming.An@amlogic.com>
 
-commit 523002c05d85a8e6be9630d8343390b773c4e700
+commit 31acdaeead93db6a7703242a912fc60a706f739d
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Feb 21 14:16:35 2025 +0800
+Date:   Wed Mar 5 09:26:58 2025 +0800
 
-    LiveTV: In ISDB mode, enter TV and set EWBS area code [1/1]
-    
-    PD#SWPL-202898
-    
+    LiveTV: Remove the Dolby atmos pop-up box from LiveTV [1/1]
+
+    PD#SWPL-204376
+
     Problem:
-    DC off/on, EWBS not displayed
-    
+    HDMI input ATMOS audio，top right corner
+    has not show two ATMOS logo
+
     Solution:
-    In ISDB mode, enter TV and set EWBS area code
-    
+    Remove the Dolby atmos pop-up box from LiveTV
+
     Verify:
     T5M
-    
-    Change-Id: Ic18979b349c101b0293324f0531b16a2b7776cdc
+
+    Change-Id: Ia1c6f2cdb22689b32976978b31609bc162816d98
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit daf39f8413887026daef01234449914f44471cfc
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Fri Feb 28 16:25:17 2025 +0800
+
+    LiveTV: UI transmitter incorrect [1/1]
+
+    PD#SWPL-203439
+
+    Problem:
+    dtvkit lack flow, and UI check flow incorrect
+
+    Solution:
+    UI fix flow, and dtvkit add flow
+
+    Verify:
+    T6D
+
+    Change-Id: I3d228fde7d7ca06c6c451d351814cd5530ec93ce
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
